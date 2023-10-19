@@ -89,7 +89,7 @@ const PropTable: React.FC<TableProps> = ({
               }}
             />
             <label htmlFor={row.rowId}>
-              {row.isMarketOpen ? MarketStatus.Open : MarketStatus.Suspended }
+              {row.isMarketOpen ? MarketStatus.Open : MarketStatus.Suspended}
             </label>
           </div>
         )

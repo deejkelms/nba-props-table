@@ -39,7 +39,7 @@ TBD
 _Easily set up a local development environment!_
 
 ```bash
-clone
+git clone https://github.com/deejkelms/nba-props-table.git
 npm install
 npm run server # runs the local development server
 npm run dev
