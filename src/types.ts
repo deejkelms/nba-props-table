@@ -1,3 +1,14 @@
+import '@emotion/react'
+
+declare module '@emotion/react' {
+  export interface Theme {
+    colors: {
+      primary: string
+      secondary: string
+    }
+  }
+}
+
 export interface PlayerAlternateStat {
   playerName: string
   playerId: number
@@ -75,4 +86,19 @@ export interface TableFilters {
   market: string
   position: string
   status: string
+}
+
+export interface ThemeProps {
+  background: string
+  text: string
+}
+
+export const darkTheme: ThemeProps = {
+  background: 'var(--dark-background)',
+  text: 'var(--dark-text)',
+}
+
+export const lightTheme: ThemeProps = {
+  background: 'var(--light-background)',
+  text: 'var(--light-text)',
 }
