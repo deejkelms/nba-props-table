@@ -73,7 +73,6 @@ const PropTable: React.FC<TableProps> = ({
     {
       name: 'Market Status',
       key: 'isMarketOpen',
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-expect-error need to find out how to fix this, related to ReactDataGrid
       renderCell: ({ row }) => {
         // TODO: fix type, update to a toggle or slider to be more visually clear

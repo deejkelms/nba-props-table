@@ -18,10 +18,6 @@ const checkMarketStatus = (
       market.underOdds < 0.4 && market.overOdds < 0.4 && market.pushOdds < 0.4
   )
 
-  console.log('is market suspended?', propsMarket.marketSuspended === 0)
-  console.log('does the optimal line exist', optimalLineExistsInAlternates)
-  console.log('are probabilities over 40', !areAllProbabilitiesUnder40)
-
   return (
     propsMarket.marketSuspended === 0 &&
     optimalLineExistsInAlternates &&
