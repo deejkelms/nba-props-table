@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { css, useTheme } from '@emotion/react'
+import { css } from '@emotion/react'
 import {
   MergedTableData,
   RequestStatus,
@@ -36,8 +36,6 @@ const style = {
 }
 
 const PropTableContainer = () => {
-  const { colors } = useTheme()
-
   const [tableData, setTableData] = useState<MergedTableData[]>([])
   const [tableFilters, setTableFilters] = useState<TableFilters>({
     market: '',
@@ -81,7 +79,7 @@ const PropTableContainer = () => {
   const searchBar = (
     <div>
       <input
-        css={{ color: colors.primary }}
+        css={style.searchbar}
         id="playerSearch"
         name="playerSearch"
         type="text"
